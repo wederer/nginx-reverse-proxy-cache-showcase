@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: .
+  proxy:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./favicon.ico:/somewhere/favicon.ico:ro
