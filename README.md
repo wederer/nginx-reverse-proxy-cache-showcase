@@ -9,8 +9,8 @@ For the config of the nginx see `nginx.conf`.
 1. `docker-compose up`
 2. Open browser and load `http://localhost`
 3. The request will take 5 seconds and the container `web_1` will log `Request received`.
-4. After the page finishes loading -> reload the page to see that the page loads instantly and no `Request received` is logged (the cache valid for 10 seconds)
-5. Try to load the cached page in multiple browsers to see the functionality of a shared cache
+4. After the page finishes loading -> reload the page to see that the page loads instantly and no `Request received` is logged. Only the nginx will log. After 10 seconds the cache expires.
+5. Try to load the cached page in multiple browsers to see the functionality of a shared cache.
 
 ## Bottom line
 Using nginx as a reverse proxy is a great way to add caching and reduce load on the backend.
