@@ -1,7 +1,9 @@
-# Showcase of a nginx reverse proxy which uses caching
+# Caching with nginx as a reverse proxy
 
 This demo shows the caching mechanic of a nginx reverse proxy (https://www.nginx.com/blog/nginx-caching-guide/).
 The webserver takes 5 seconds to send a response and the response is cached for 10 seconds by the nginx reverse proxy.
+
+For the config of the nginx see `nginx.conf`.
 
 ## How to run:
 1. `docker-compose up`
